@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="add">+</button>
+    <div id="title"><h1>Simple Library</h1></div>
+    <div id="desc">This is simple library that can save book information and show it</div>
+    <div id="main">
+        <div id="display">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page</th>
+                    <th>Year</th>
+                    <th>Read</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="formBG hidden">
+        <div class="formBox">
+            <p>Please fill the form</p>
+            <form action="" id="form">
+                <input type="text" id="bookTitle" name="inputTitle" placeholder="Title" required>
+                <input type="text" id="author" name="inputAuthor" placeholder="Author" required>
+                <input type="number" id="page" name="inputPage" placeholder="Page" required>
+                <input type="number" id="year" name="inputYear" placeholder="Year" required>
+            </form>
+            <div id="button">
+                <button type="submit" id="submit">Submit</button>
+                <button id="cancel">Cancel</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
