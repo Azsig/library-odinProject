@@ -24,20 +24,19 @@
         </div>
     </div>
     <div class="formBG hidden">
-        <div class="formBox">
+        <form action="" class="formBox">
             <p>Please fill the form</p>
-            <form action="" id="form">
-                <input type="text" id="bookTitle" name="inputTitle" placeholder="Title" required>
-                <input type="text" id="author" name="inputAuthor" placeholder="Author" required>
-                <input type="number" id="page" name="inputPage" placeholder="Page" required>
-                <input type="number" id="year" name="inputYear" placeholder="Year" required>
-            </form>
-            <div id="button">
-                <button type="submit" id="submit">Submit</button>
-                <button id="cancel">Cancel</button>
+            <div id="form">
+                <input class="form" type="text" id="bookTitle" name="inputTitle" placeholder="Title" required>
+                <input class="form" type="text" id="author" name="inputAuthor" placeholder="Author" required>
+                <input class="form" type="number" id="page" name="inputPage" placeholder="Page" required>
+                <input class="form" type="number" id="year" name="inputYear" placeholder="Year" required>
             </div>
-            
-        </div>
+            <div id="button">
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
