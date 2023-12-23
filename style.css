@@ -53,12 +53,31 @@ body .hidden{
     width: 50px;
     border-radius: 50%;
     height: 50px;
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
     box-shadow: none;
     background-color: aqua;
     font-size: 1.5rem;
+}
+
+#delete{
+    width: 20px;
+    height: 20px;
+}
+
+#delete svg{
+    width: 20px;
+}
+
+td{
+    text-align: center;
+}
+
+.sett{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    gap:5px;
+
 }
 
 input::-webkit-outer-spin-button,
