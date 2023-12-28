@@ -3,18 +3,21 @@
 const theLibrary = [];
 
 //construction for book object
-function book(title, author, page, year){
-    this.title = title;
-    this.author = author;
-    this.page = page;
-    this.year = year;
-    this.read = 'not read'
-    this.info = () => {
-        info = title + ' ' + author + ' ' + page + ' ' + year + ' ' + this.read;
-        return info;
+class book{
+    constructor(title, author, page, year){
+        this.title = title;
+        this.author = author;
+        this.page = page;
+        this.year = year;
+        this.read = 'not read';
     }
 
+    info = () =>{
+        return `${this.title} ${this.author} ${this.page} ${this.year} ${this.read}`
+    }
 }
+
+
 
 //put the element from html
 let delList = document.querySelectorAll('#delete');
