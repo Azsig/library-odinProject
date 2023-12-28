@@ -13,7 +13,7 @@ class book{
     }
 
     info = () =>{
-        return `${this.title} ${this.author} ${this.page} ${this.year} ${this.read}`
+        return `${this.title} by ${this.author}, ${this.page} page, made in${this.year} ${this.read}`
     }
 }
 
